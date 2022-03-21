@@ -1,0 +1,18 @@
+ul,
+li {
+  list-style-type: none;
+}
+
+.draggable-item {
+  padding: 10px 0;
+  border-top: 2px solid transparent;
+  &.dragstart {
+    opacity: 0.5;
+  }
+  &.dragover {
+    border-top-color: green;
+  }
+}
+.draggable-item * {
+  pointer-events: none;
+}
